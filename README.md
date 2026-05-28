@@ -1,4 +1,4 @@
-# Ejemplo de uso
+# AUY-1105 - EP2, Miguel Villagra
 
 ## Objetivo
 
