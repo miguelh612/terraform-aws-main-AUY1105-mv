@@ -3,7 +3,7 @@ module "vpc" {
 }
 
 module "ec2" {
-  source                = "github.com/miguelh612/terraform-aws-ec2-AUY1105-mv?ref=v1.0.2"
+  source                = "github.com/miguelh612/terraform-aws-ec2-AUY1105-mv?ref=v1.1.0"
   vpc_id                = module.vpc.vpc_id
   public_subnet_id      = module.vpc.public_subnet_id
   public_subnet_2_id    = module.vpc.public_subnet_2_id
@@ -11,11 +11,11 @@ module "ec2" {
 }
 
 module "s3" {
-  source = "github.com/miguelh612/terraform-aws-s3-AUY1105-mv?ref=v1.0.1"
+  source = "github.com/miguelh612/terraform-aws-s3-AUY1105-mv?ref=v1.1.0"
 }
 
 module "alb" {
-  source             = "github.com/miguelh612/terraform-aws-alb-AUY1105-mv?ref=v1.0.2"
+  source             = "github.com/miguelh612/terraform-aws-alb-AUY1105-mv?ref=v1.1.0"
   vpc_id             = module.vpc.vpc_id
   public_subnet_id   = module.vpc.public_subnet_id
   public_subnet_2_id = module.vpc.public_subnet_2_id
