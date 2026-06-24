@@ -1,7 +1,31 @@
 # CHANGELOG
 
 ```git
-commit 52da8594f0049f5ab04100f0499e5ac0c05e13ae (HEAD -> master, tag: v1.1.3, origin/master, origin/HEAD)
+commit e59f0987248ef0008ac40efa54c8fd4a12f60405 (tag: v1.2.2)
+Author: miguelh612 <mi.villagra@duocuc.cl>
+Date:   Wed Jun 24 18:11:48 2026 -0400
+
+    fix en workflow, ajuste para PR
+```
+
+```git
+commit aaafceb626e091d0a1df7138540ec0ffe58f43ec (tag: v1.2.1)
+Author: miguelh612 <mi.villagra@duocuc.cl>
+Date:   Thu May 28 17:40:50 2026 -0400
+
+    Corrección en versiones en source
+```
+
+```git
+commit 8776681b593e69bc981b59e09f9b7c5c3b397656 (tag: v1.2.0)
+Author: miguelh612 <mi.villagra@duocuc.cl>
+Date:   Thu May 28 17:33:24 2026 -0400
+
+    Añadido CHANGELOG.md y README.md
+```
+
+```git
+commit 52da8594f0049f5ab04100f0499e5ac0c05e13ae (tag: v1.1.3)
 Author: miguelh612 <mi.villagra@duocuc.cl>
 Date:   Thu May 28 17:19:27 2026
 
