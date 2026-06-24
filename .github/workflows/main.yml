@@ -2,7 +2,7 @@ name: Main Terraform Trigger
 on:
   pull_request:
     branches:
-      - main
+      - master
 jobs:
   call-terraform-workflow:
     name: Call Terraform Workflow
@@ -10,6 +10,7 @@ jobs:
     with:
       path: .
   call-checkov-workflow:
+    needs: call-terraform-workflow
     name: Call Checkov Workflow
     uses: ./.github/workflows/checkov.yml
     with:
