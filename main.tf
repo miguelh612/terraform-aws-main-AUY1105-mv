@@ -1,5 +1,5 @@
 module "vpc" {
-  source = "github.com/miguelh612/terraform-aws-vpc-AUY1105-mv?ref=v1.0.0"
+  source = "github.com/miguelh612/terraform-aws-vpc-AUY1105-mv?ref=v1.1.0"
 }
 
 module "ec2" {
