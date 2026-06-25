@@ -1,0 +1,7 @@
+vpc_name = "qa-vpc"
+vpc_cidr = "192.168.0.0/16"
+instance_name = "qa-instance"
+public_subnet_cidr = "192.168.1.0/24"
+public_subnet_2_cidr = "192.168.2.0/24"
+private_subnet_cidr = "192.168.3.0/24"
+alb_name = "qa-alb"
