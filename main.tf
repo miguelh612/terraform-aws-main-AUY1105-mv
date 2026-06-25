@@ -1,10 +1,10 @@
 module "vpc" {
-  source = "github.com/miguelh612/terraform-aws-vpc-AUY1105-mv?ref=v1.2.0"
-  vpc_name = var.vpc_name
-  vpc_cidr = var.vpc_cidr
-  public_subnet_cidr = var.public_subnet_cidr
+  source               = "github.com/miguelh612/terraform-aws-vpc-AUY1105-mv?ref=v1.2.0"
+  vpc_name             = var.vpc_name
+  vpc_cidr             = var.vpc_cidr
+  public_subnet_cidr   = var.public_subnet_cidr
   public_subnet_2_cidr = var.public_subnet_2_cidr
-  private_subnet_cidr = var.private_subnet_cidr
+  private_subnet_cidr  = var.private_subnet_cidr
 }
 
 module "ec2" {
