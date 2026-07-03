@@ -1,0 +1,79 @@
+import{
+    to = module.vpc.aws_vpc.main
+    id = "vpc-02b6da40634a10494"
+}
+
+import{
+    to = module.vpc.aws_subnet.public
+    id = "subnet-05c02675a1a2ad36f"
+}
+
+import{
+    to = module.vpc.aws_subnet.public_2
+    id = "subnet-0e06298cecd67ed96"
+}
+
+import{
+    to = module.vpc.aws_subnet.private
+    id = "subnet-0cd5f2b90c567a72d"
+}
+
+import{
+    to = module.vpc.aws_route_table.public
+    id = "rtb-081f7f85dea9729b9"
+}
+
+import{
+    to = module.vpc.aws_internet_gateway.main
+    id = "igw-08cb71642bc94771a"
+}
+
+import{
+    to = module.vpc.aws_route_table_association.public
+    id = "subnet-05c02675a1a2ad36f/rtb-081f7f85dea9729b9"
+}
+
+import{
+    to = module.vpc.aws_route_table_association.public_2
+    id = "subnet-0e06298cecd67ed96/rtb-081f7f85dea9729b9"
+}
+
+import{
+    to = module.s3.random_id.suffix
+    id = "e14c8c8a"
+}
+
+import {
+  to = module.ec2.aws_security_group.web
+  id = "sg-0b1191eeba360c169"
+}
+
+import {
+  to = module.ec2.aws_instance.web
+  id = "i-04c103697c039b1d9"
+}
+
+import {
+  to = module.alb.aws_security_group.alb
+  id = "sg-0911ab0290c551d67"
+}
+
+# import {
+#   to = module.alb.aws_lb_target_group_attachment.web
+#   id = "arn:aws:elasticloadbalancing:us-east-1:246571967396:targetgroup/tg-web-prueba2/2fcd5fbcd921e834,i-04c103697c039b1d9"
+# }
+
+import {
+  to = module.alb.aws_lb_target_group.web
+  id = "arn:aws:elasticloadbalancing:us-east-1:246571967396:targetgroup/tg-web-prueba2/2fcd5fbcd921e834"
+}
+
+import {
+  to = module.alb.aws_lb_listener.http
+  id = "arn:aws:elasticloadbalancing:us-east-1:246571967396:listener/app/prod-alb/0cb00d535492cf99/9876e5ac597019ef"
+}
+
+import {
+  to = module.alb.aws_lb.main
+  id = "arn:aws:elasticloadbalancing:us-east-1:246571967396:loadbalancer/app/prod-alb/0cb00d535492cf99"
+}

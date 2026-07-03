@@ -17,7 +17,7 @@ module "ec2" {
 }
 
 module "s3" {
-  source = "github.com/miguelh612/terraform-aws-s3-AUY1105-mv?ref=v1.1.0"
+  source = "github.com/miguelh612/terraform-aws-s3-AUY1105-mv?ref=v1.1.3"
 }
 
 module "alb" {
